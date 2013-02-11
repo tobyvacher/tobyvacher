@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+  <title>TobyVacher.com - CV and Contact Information</title>
+  <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+  <script type="text/javascript" language="javascript"
+ src="js/jquery.min.js">
+ 
+ <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23065530-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+ 
+</head>
+<body>
+<div id="top"></div>
+<div id="page">
+<div class="page-in">
+<div id="datacontent">
+<ul class="navigation">
+
+<h1> TobyVacher.com </h1>
+  
+</ul>
+
+
+<!-- Top about --> </div>
+<!-- datacontent #end -->
+<div class="wrapper">
+<div id="home">
+<div class="main_content">
+<h1 style="text-align: center;">Click the card you're holding...</h1><br />
+<center>
+<table>
+<tbody>
+<tr>
+<td style="align: center; padding: 2px;">
+<a href="http://www.tobyvacher.com"><img src="images/cards/card1.png" width="48" alt="card1" border="1px" /></a>
+</td>
+
+<td style="align: center; padding: 2px;">
+<a href="http://www.tobyvacher.com"><img src="images/cards/card2.png" height="48" alt="card1" border="1px" /></a><br /><br />
+<a href="http://www.tobyvacher.com"><img src="images/cards/card3.png" height="48" alt="card1" border="1px" /></a><br /><br />
+<a href="http://www.tobyvacher.com"><img src="images/cards/card8.png" height="48" alt="card1" border="1px" /></a>
+</td>
+
+<td style="align: center; padding: 2px;">
+<a href="http://www.tobyvacher.com"><img src="images/cards/card4.png" height="48" alt="card1" border="1px" /></a><br /><br />
+<a href="http://www.tobyvacher.com"><img src="images/cards/card5.png" height="48" alt="card1" border="1px" /></a><br /><br />
+<a href="http://www.tobyvacher.com"><img src="images/cards/card9.png" height="48" alt="card1" border="1px" /></a>
+</td>
+
+<td style="align: center; padding: 2px;">
+<a href="http://www.tobyvacher.com"><img src="images/cards/card6.png" height="48" alt="card1" border="1px" /></a><br /><br />
+<a href="http://www.tobyvacher.com"><img src="images/cards/card7.png" height="48" alt="card1" border="1px" /></a><br /><br />
+<a href="http://www.tobyvacher.com"><img src="images/cards/card10.png" height="48" alt="card1" border="1px" /></a>
+</td>
+
+<td style="align: center; padding: 2px;">
+<a href="http://www.tobyvacher.com"><img src="images/cards/card11.png" width="48" alt="card1" border="1px" /></a>
+</td>
+</tr>
+</tbody>
+</table>
+</center>
+<div id="content"></div>
+<div class="clear"></div>
+
+</div>
+</div>
+
+</div>
+
+
+<div id="footer"></div> 
+<script type="text/javascript" charset="utf-8">
+$('#content a').each(function () {
+$('<div class="fader" />').css('opacity', 0).prependTo(this);
+}).hover(function () {
+$('img', this).stop().animate({
+marginLeft : 0
+}, 150);
+$('.fader', this).stop().animate({
+opacity : 0.15
+});
+}, function () {
+$('img', this).stop().animate({
+marginLeft : 10
+}, 150);
+$('.fader', this).stop().animate({
+opacity : 0
+});
+}).find('img').css('marginLeft', 10);
+$('.navigation').each(function () {
+var $links = $(this).find('a'),
+panelIds = $links.map(function() { return this.hash; }).get().join(","),
+$panels = $(panelIds),
+$panelwrapper = $panels.filter(':first').parent(),
+delay = 500,
+heightOffset = 0; // we could add margin-top + margin-bottom + padding-top + padding-bottom of $panelwrapper
+$panels.hide();
+$links.click(function () {
+var link = this, $link = $(this);
+// ignore if already visible
+if ($link.is('.active')) {
+return false;
+}
+$links.removeClass('active');
+$link.addClass('active');
+document.title = 'TobyVacher.com - ' + $link.text();
+if ($.support.opacity) {
+$panels.stop().animate({opacity: 0 }, delay);
+}
+$panelwrapper.stop().animate({
+height: 0
+}, delay, function () {
+var height = $panels.hide().filter(link.hash).css('opacity', 1).show().height() + heightOffset;
+$panelwrapper.animate({
+height: height
+}, delay);
+});
+});
+$links.filter(window.location.hash ? '[hash=' + window.location.hash + ']' : ':first').click();
+});
+</script>
+</body>
+</html>
