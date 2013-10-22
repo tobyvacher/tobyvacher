@@ -808,7 +808,12 @@
 
 	.wrapper-style1
 	{
-		background-image: none;
+    background: repeat url(../images/mooning.png);
+/* This is for responsive, non-tiled BGs
+    background-size: contain;
+    -moz-background-size: contain;  /* Firefox 3.6 */
+/*    background-position: contain;  /* Internet Explorer 7/8 */
+*/
 		background-color: #fff;
 	}
 	
