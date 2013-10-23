@@ -259,15 +259,19 @@
 		outline: 0;
 		cursor: pointer;
 		border-radius: 8px;
+/*
 		text-shadow: -1px -1px 0.5px rgba(0,0,0,0.5);
+*/
 		overflow: hidden;
 		background: #61b8db;
+/*
 		background-image: -moz-linear-gradient(top, rgba(97,184,219,0), rgba(48,141,196,1));
 		background-image: -webkit-linear-gradient(top, rgba(97,184,219,0), rgba(48,141,196,1));
 		background-image: -o-linear-gradient(top, rgba(97,184,219,0), rgba(48,141,196,1));
 		background-image: -ms-linear-gradient(top, rgba(97,184,219,0), rgba(48,141,196,1));
 		background-image: linear-gradient(top, rgba(97,184,219,0), rgba(48,141,196,1));
-		box-shadow: inset 0px 0px 0px 1px #135c86, inset 0px 2px 1px 0px rgba(255,255,255,0.75);
+*/
+/* 		box-shadow: inset 0px 0px 0px 1px #135c86, inset 0px 2px 1px 0px rgba(255,255,255,0.75); */
 		-moz-transition: background-color .2s ease-in-out;
 		-webkit-transition: background-color .2s ease-in-out;
 		-o-transition: background-color .2s ease-in-out;
@@ -284,7 +288,6 @@
 			top: 0;
 			width: 100%;
 			height: 100%;
-			background: url('images/bg.png');
 		}
 
 		.button:hover
@@ -295,24 +298,30 @@
 		
 		.button:active
 		{
+/*
 			background-image: -moz-linear-gradient(top, rgba(48,141,196,1), rgba(77,164,199,0));
 			background-image: -webkit-linear-gradient(top, rgba(48,141,196,1), rgba(77,164,199,0));
 			background-image: -o-linear-gradient(top, rgba(48,141,196,1), rgba(77,164,199,0));
 			background-image: -ms-linear-gradient(top, rgba(48,141,196,1), rgba(77,164,199,0));
 			background-image: linear-gradient(top, rgba(48,141,196,1), rgba(77,164,199,0));
+*/
+/*
 			box-shadow: inset 0px 0px 0px 1px #135c86, inset 0px -2px 1px 0px rgba(255,255,255,0.75);
+*/
 			top: 1px;
 		}
 	
 		.button-alt
 		{
 			background-color: #393939;
+/*
 			background-image: -moz-linear-gradient(top, rgba(50,50,50,0), rgba(45,45,45,1));
 			background-image: -webkit-linear-gradient(top, rgba(50,50,50,0), rgba(45,45,45,1));
 			background-image: -o-linear-gradient(top, rgba(50,50,50,0), rgba(45,45,45,1));
 			background-image: -ms-linear-gradient(top, rgba(50,50,50,0), rgba(45,45,45,1));
 			background-image: linear-gradient(top, rgba(50,50,50,0), rgba(45,45,45,1));
 			box-shadow: inset 0px 0px 0px 1px #242424, inset 0px 2px 1px 0px rgba(255,255,255,0.2);
+*/
 		}
 
 			.button-alt:hover
@@ -322,12 +331,14 @@
 			
 			.button-alt:active
 			{
+/*
 				background-image: -moz-linear-gradient(top, rgba(45,45,45,1), rgba(50,50,50,0));
 				background-image: -webkit-linear-gradient(top, rgba(45,45,45,1), rgba(50,50,50,0));
 				background-image: -o-linear-gradient(top, rgba(45,45,45,1), rgba(50,50,50,0));
 				background-image: -ms-linear-gradient(top, rgba(45,45,45,1), rgba(50,50,50,0));
 				background-image: linear-gradient(top, rgba(45,45,45,1), rgba(50,50,50,0));
 				box-shadow: inset 0px 0px 0px 1px #242424, inset 0px -2px 1px 0px rgba(255,255,255,0.2);
+*/
 			}
 	
 		.button-big
@@ -820,20 +831,22 @@
 	.wrapper-style2
 	{
 		background-color: #fafafa;
-		text-shadow: 1px 1px 0px #fff;
+/* 		text-shadow: 1px 1px 0px #fff; */
 	}
 	
 	.wrapper-style3
 	{
 		background-color: #f4f4f4;
-		text-shadow: 1px 1px 0px #fff;
+/* 		text-shadow: 1px 1px 0px #fff; */
 	}
 
 	.wrapper-style4
 	{
 		background-color: #303030;
 		color: #999;
+/*
 		text-shadow: -1px -1px 0px #181818;
+*/
 	}
 
 		.wrapper-style4 h1, 
